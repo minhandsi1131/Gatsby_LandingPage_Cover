@@ -9,8 +9,6 @@ import React from "react"
 import { StaticQuery, graphql } from "gatsby"
 
 import { Container, Row, Col } from "react-bootstrap"
-
-import Header from "./header"
 import Navbar from "./navBar"
 
 const Layout = ({ children, pageInfo }) => (
@@ -29,7 +27,7 @@ const Layout = ({ children, pageInfo }) => (
         <Container fluid className="px-0 main">
           <Row noGutters className="justify-content-center">
             <Col>
-              <Header siteTitle={data.site.siteMetadata.title} />
+       
             </Col>
           </Row>
           <Navbar pageInfo={pageInfo} />
